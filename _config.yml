@@ -110,24 +110,12 @@ author:
   location: 'Miami, Florida'
   email:
   links:
-    #- label: 'Email'
-    #  icon: 'fas fa-fw fa-envelope-square'
-    # url: mailto:your.name@email.com
-    #- label: 'Website'
-    #  icon: 'fas fa-fw fa-link'
-    # url: "https://your-website.com"
     - label: 'Twitter'
       icon: 'fab fa-fw fa-twitter-square'
       url: 'https://twitter.com/ddieppa'
-    #- label: 'Facebook'
-    #  icon: 'fab fa-fw fa-facebook-square'
-    # url: "https://facebook.com/"
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
       url: 'https://github.com/ddieppa'
-    #- label: 'Instagram'
-    #  icon: 'fab fa-fw fa-instagram'
-    # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -135,12 +123,9 @@ footer:
     - label: 'Twitter'
       icon: 'fab fa-fw fa-twitter-square'
       url: 'https://twitter.com/ddieppa'
-    # - label: 'Facebook'
-    #   icon: 'fab fa-fw fa-facebook-square'
-    #   # url:
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
-      # url:
+      url:
     - label: 'GitLab'
       icon: 'fab fa-fw fa-gitlab'
       url: 'https://github.com/ddieppa'
@@ -276,7 +261,7 @@ defaults:
       path: ''
       type: posts
     values:
-      layout: splash
+      layout: single
       author_profile: true
       read_time: true
       comments: true

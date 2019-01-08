@@ -12,22 +12,22 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: 'default' # 'air' , "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: 'en-US'
-title: "Dieppa's Blog"
-title_separator: '-'
-name: 'Daniel Dieppa'
-description: 'An amazing website.'
-url: https://ddieppa.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+locale: "en-US"
+title: "Another Tech Blog"
+title_separator: "-"
+name: "Daniel Dieppa"
+description: "These are my experiences as a Developer, a father, a husband and a tech fan."
+url: ddieppa.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: ddieppa/ddieppa.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: /assets/images/500x300.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
 comments:
-  provider: 'disqus' # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
+  provider: disqus # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname: dieppas-blog # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -39,6 +39,7 @@ comments:
     colorscheme: # "light" (default), "dark"
   utterances:
     theme: # "github-light" (default), "github-dark"
+    issue_term: # "pathname" (default)
 staticman:
   allowedFields: # ['name', 'email', 'url', 'message']
   branch: # "master"
@@ -62,7 +63,7 @@ reCaptcha:
 atom_feed:
   path: # blank (default) uses feed.xml
 search: true # true, false (default)
-search_full_content: # true, false (default)
+search_full_content: true # true, false (default)
 search_provider: lunr # lunr (default), algolia, google
 algolia:
   application_id: # YOUR_APPLICATION_ID
@@ -73,7 +74,7 @@ google:
   search_engine_id: # YOUR_SEARCH_ENGINE_ID
   instant_search: # false (default), true
 # SEO Related
-google_site_verification: # google54526e0fb1dc19ae.html
+google_site_verification:
 bing_site_verification:
 yandex_site_verification:
 naver_site_verification:
@@ -92,57 +93,38 @@ social:
   type: # Person or Organization (defaults to Person)
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - 'https://twitter.com/ddieppa'
-    - 'https://www.linkedin.com/in/ddieppa'
-
+    - "https://twitter.com/ddieppa"
+    - "https://www.linkedin.com/in/ddieppa"
 # Analytics
 analytics:
-  provider: 'google' # false (default), "google", "google-universal", "custom"
+  provider: google-universal # false (default), "google", "google-universal", "custom"
   google:
     tracking_id: UA-62178403-2
     anonymize_ip: # true, false (default)
 
 # Site Author
-author:
-  name: 'Daniel Dieppa'
-  avatar: '/assets/images/bio-photo.jpg' # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: 'I am an amazing person.'
-  location: 'Miami, Florida'
-  email:
-  links:
-    - label: 'Twitter'
-      icon: 'fab fa-fw fa-twitter-square'
-      url: 'https://twitter.com/ddieppa'
-    - label: 'GitHub'
-      icon: 'fab fa-fw fa-github'
-      url: 'https://github.com/ddieppa'
+author: Daniel Dieppa
 
 # Site Footer
 footer:
   links:
-    - label: 'Twitter'
-      icon: 'fab fa-fw fa-twitter-square'
-      url: 'https://twitter.com/ddieppa'
-    - label: 'GitHub'
-      icon: 'fab fa-fw fa-github'
-      url:
-    - label: 'GitLab'
-      icon: 'fab fa-fw fa-gitlab'
-      url: 'https://github.com/ddieppa'
-    # - label: 'Bitbucket'
-    #   icon: 'fab fa-fw fa-bitbucket'
-    #   # url:
-    # - label: 'Instagram'
-    #   icon: 'fab fa-fw fa-instagram'
-    #   # url:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ddieppa"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ddieppa"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/ddieppa"
 
 # Reading Files
 include:
   - .htaccess
   - _pages
 exclude:
-  - '*.sublime-project'
-  - '*.sublime-workspace'
+  - "*.sublime-project"
+  - "*.sublime-workspace"
   - vendor
   - .asset-cache
   - .bundle
@@ -169,8 +151,8 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: 'utf-8'
-markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
@@ -196,7 +178,7 @@ sass:
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:year/:month/:title
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -258,12 +240,12 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: # true
       share: true
       related: true

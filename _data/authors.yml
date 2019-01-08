@@ -1,0 +1,25 @@
+Daniel Dieppa:
+  name: "Daniel Dieppa"
+  avatar: /assets/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "Just another crazy developer."
+  location: "Miami, FL"
+  email:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:ddieppad@gmail.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://ddieppa.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ddieppa"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.linkedin.com/in/ddieppa/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ddieppa"
+    - label: "StackOverflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/479837/ddieppa"

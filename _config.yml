@@ -58,7 +58,7 @@ staticman:
         format: # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
   endpoint: # URL of your own deployment with trailing slash, will fallback to the public instance
 reCaptcha:
-  siteKey:
+  siteKey: 6LewBIgUAAAAAGbQizoNvWZSUlFBz8-z4bkhSEBG
   secret:
 atom_feed:
   path: # blank (default) uses feed.xml
@@ -236,6 +236,12 @@ compress_html:
   ignore:
     envs: development
 
+  # Collecitons
+  collections:
+    portfolio:
+      output: true
+      permalink: /:collection/:path/
+
 # Defaults
 defaults:
   # _posts
@@ -248,4 +254,20 @@ defaults:
       read_time: true
       comments: # true
       share: true
-      related: true
+      related:
+        true
+ # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+# _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true      
